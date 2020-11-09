@@ -36,10 +36,6 @@ section {
   padding: 5rem 0;
 }
 
-body {
-  background-color: cornflowerblue;
-}
-
 /* Header */
 
 header {
@@ -139,9 +135,85 @@ nav {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: 0;
   width: 100%;
   height: 4.7rem;
-  background: url("img/wave-small.png") no-repeat;
+  background: url("img/wave-small.png") center no-repeat;
   background-size: cover;
+}
+
+.main-massage {
+  width: 100%;
+  max-width: 50rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  transform: translateY(20%);
+}
+
+.main-massage h3 {
+  font-size: 1.6rem;
+}
+
+.main-massage h1 {
+  font-family: "aldrich", sans-serif;
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.main-massage p {
+  text-transform: lowercase;
+}
+
+.btn {
+  background-color: #eb648c;
+  border-radius: 2rem;
+  color: #fafafa;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  transition: background-color 650ms;
+}
+
+.btn:hover {
+  background-color: #c3587b;
+}
+
+/* Exprience the outdoors*/
+
+.experience-outdoors {
+  padding: 0;
+}
+
+.title-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.title-heading h3 {
+  font-size: 1.4rem;
+}
+
+.title-heading h1 {
+  font-family: "aldrich", sans-serif;
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.title-heading p {
+  text-transform: lowercase;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.activiteis-grid-item {
+  height: 40rem;
+  padding: 5rem;
+  color: #fafafa;
 }
